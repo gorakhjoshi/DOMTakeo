@@ -1,5 +1,7 @@
 'use strict';
 
-let heading = document.querySelector('#root');
+let quoteContainer = document.querySelector('.quote-container');
+let quote = document.querySelector('#quote');
+let author = document.querySelector('#author');
 
-heading.textContent = 'Other Heading';
+console.dir(quoteContainer);
