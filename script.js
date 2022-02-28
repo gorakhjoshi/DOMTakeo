@@ -1,7 +1,13 @@
 'use strict';
 
-let quoteContainer = document.querySelector('.quote-container');
-let quote = document.querySelector('#quote');
-let author = document.querySelector('#author');
+async function getQuotes() {
+  try {
+    const response = await fetch('https://type.fit/api/quotes');
+    const quoteData = await response.json();
+    console.log(quoteData);
+  } catch (error) {
+    console.log('Some error!');
+  }
+}
 
-console.dir(quoteContainer);
+getQuotes();
