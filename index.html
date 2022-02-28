@@ -7,23 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Quote Generator</title>
 </head>
 
 <body>
     <div class="quote-container">
-        <div>
+        <div class="quote-text">
+            <i class="fa-solid fa-quote-left"></i>
             <span id="quote">Happiness is the reward we get for living to the highest right we
                 know.</span>
         </div>
 
-        <div>
+        <div class="quote-author">
             <span id="author">Richard Bach</span>
         </div>
 
-        <div>
+        <div class="button-container">
+            <button class="twitter-button" id="twitter" title="Tweet this!">
+                <i class="fa-brands fa-twitter"></i>
+            </button>
             <button id="new-quote">New Quotes</button>
-            <button id="twitter">Tweet Quotes</button>
         </div>
     </div>
 </body>
